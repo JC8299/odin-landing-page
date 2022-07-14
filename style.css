@@ -1,0 +1,72 @@
+* {
+    font-family: "roboto", Verdana, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header>ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+.content-section {
+    padding: 16px;
+}
+
+.hero-section {
+    display: flex;
+    gap: 16px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.information-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.information-section>ul {
+    display: flex;
+    gap: 16px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    text-align: center;
+}
