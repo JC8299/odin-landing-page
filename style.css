@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0;
 }
 
 ul {
@@ -16,9 +17,36 @@ a {
     text-decoration: none;
 }
 
+button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    height: 32px;
+    width: 120px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.header,
+.hero-section,
+.footer {
+    background-color: #1F2937;
+}
+
+.hero-text>p:last-of-type,
+.header>ul>li>a {
+    font-size: 18px;
+    color: #E5E7EB;
+    font-weight: 500;
+}
+
 .header {
     display: flex;
     justify-content: space-around;
+}
+
+.header>p {
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
 .header>ul {
@@ -27,15 +55,21 @@ a {
     margin: 0;
     padding: 0;
     gap: 16px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.content-section {
-    padding: 16px;
-}
+/* .content-section {
+
+} */
 
 .hero-section {
     display: flex;
     gap: 16px;
+    padding: 72px 144px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 50%;
 }
 
 .hero-text {
@@ -44,14 +78,27 @@ a {
     gap: 8px;
 }
 
+.hero-text:first-child {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8
+}
+
 .information-section {
     display: flex;
     flex-direction: column;
+    padding: 32px 256px;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    text-align: center;
 }
 
 .information-section>ul {
     display: flex;
     gap: 16px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .card {
@@ -65,8 +112,50 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #E5E7EB;
+    color: #1F2937;
+    padding: 48px 256px;
+}
+
+.quote-section>p>em {
+    font-size: 36px;
+    font-weight: 100;
+}
+
+.quote-section>p:last-of-type {
+    align-self: flex-end;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.call-to-action-section {
+    display: flex;
+    margin: 42px 144px;
+    padding: 32px 72px;
+    background-color: #3882F6;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.call-to-action-text {
+    font-size: 18px;
+    color: #E5E7EB
+}
+
+.call-to-action-text>p {
+    margin: 0;
+}
+
+.call-to-action-text>p:first-of-type {
+    font-weight: bold;
+    color: #F9FAF8
+}
+
+.call-to-action-section>button {
+    border: 2px solid #F9FAF8;
 }
 
 .footer {
+    color: #E5E7EB;
     text-align: center;
 }
